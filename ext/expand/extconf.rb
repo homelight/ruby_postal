@@ -14,6 +14,9 @@ HEADER_DIRS = [
   # Check the ruby install locations
   INCLUDEDIR,
 
+  # Where libpostal is installed in the Heroku buildback
+  '/app/vendor/include',
+
   # Finally fall back to /usr
   '/usr/include',
 ]
@@ -27,6 +30,9 @@ LIB_DIRS = [
 
   # Check the ruby install locations
   LIBDIR,
+
+  # Where libpostal is installed in the Heroku buildback
+  '/app/vendor/lib',
 
   # Finally fall back to /usr
   '/usr/lib',
